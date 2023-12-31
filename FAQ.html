@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-color: #999;
+}
+.container
+{
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container h1
+{
+    color: black;
+}
+.container .tab
+{
+    position: relative;
+    background-color: aliceblue;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+border-radius: 5px;
+overflow: hidden;
+}
+.container .tab input
+{
+    appearance: none;
+}
+.container .tab label
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.container .tab label::after
+{
+    content: '+';
+    position: absolute;
+    right: 20px;
+font-size: 2em;
+color: rgb(87, 33, 92);
+transition: transform 1s;
+}
+.container .tab:hover label ::after
+{
+    color: yellow;
+
+}
+.container .tab input:checked ~ label::after
+{
+    transform: rotate(135deg);
+}
+.container .tab label h2
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(37, 152, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container .tab label h3
+ 
+{
+    position: relative;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+
+}
+.container .tab .content
+{
+    max-height: 0;
+    transition: 1.3s;
+    overflow: hidden;
+}
+.container .tab input:checked ~ .content
+{
+    max-height: 100vh;
+}
+.container .tab .content p
+{
+    position: relative;
+    padding: 10px 0;
+    color: rgb(57, 98, 35);
+  z-index:10;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently asked questions?</h1>
+        <div class="tab"><input type="radio" name="acc" id="acc1">
+        <label for="acc1">
+         <h2>01</h2>
+         <h3>Why are plastic toys so popular?</h3>   
+        </label>
+    <div class="content"><p> Plastic toys are popular because they are:
+        * Durable: They can withstand rough play and drops.
+        * Affordab: They are generally less expensive than wooden or metal toys.
+        * Versatile: They can be made in a wide variety of shapes, sizes, and colors.
+        * Lightweight: They are easy for children to carry and play with.
+        
+        </p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc2">
+        <label for="acc2">
+         <h2>02</h2>
+         <h3>What are the safety concerns about plastic toys?</h3>   
+        </label>
+    <div class="content"><p>Some plastic toys may contain harmful chemicals, such as BPA or phthalates, which can leach out and be absorbed by children through their skin or mouth. These chemicals have been linked to health problems such as developmental delays, hormonal imbalances, and cancer.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc3">
+        <label for="acc3">
+         <h2>03</h2>
+         <h3>How can I choose safe plastic toys for my child?</h3>   
+        </label>
+    <div class="content"><p>Look for toys that are labeled as "BPA-free" and "phthalate-free." You can also check online databases for information about the safety of specific toy brands and models. Be wary of toys with strong chemical odors, as this may indicate the presence of harmful chemicals.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc4">
+        <label for="acc4">
+         <h2>04</h2>
+         <h3>What are some eco-friendly alternatives to plastic toys?
+
+         </h3>   
+        </label>
+    <div class="content"><p> There are many eco-friendly alternatives to plastic toys, such as:
+        * Wooden toys: They are durable, safe, and come from a renewable resource.
+        * Metal toys: They are also durable and safe, but can be heavier and more expensive than plastic toys.
+        * Fabric toys: They are soft and safe for young children, but may not be as durable as other options.
+        * Recycled toys: Upcycled or secondhand toys can be a great way to reduce waste and save money.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc5">
+        <label for="acc5">
+         <h2>05</h2>
+         <h3>Can I recycle plastic toys?</h3>   
+        </label>
+    <div class="content"><p> The ability to recycle plastic toys depends on the type of plastic used. Some types of plastic are more recyclable than others. Check the recycling symbol on the toy to see if it is recyclable in your area.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc6">
+        <label for="acc6">
+         <h2>06</h2>
+         <h3>How can I teach my child about responsible toy use and disposal?</h3>   
+        </label>
+    <div class="content"><p>Teach your child to take care of their toys so they last longer. Encourage them to share their toys with others and donate or recycle toys they no longer play with. Explain the importance of protecting the environment and how choosing eco-friendly toys can help.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc7">
+        <label for="acc7">
+         <h2>07</h2>
+         <h3>What are some fun and educational games and activities that can be played with plastic toys?</h3>   
+        </label>
+    <div class="content"><p>Plastic toys can be used for a variety of fun and educational games and activities, such as:
+        * Sorting and counting toys by color, size, or shape.
+        * Building structures with blocks or other construction toys.
+        * Pretending with dolls, action figures, and playsets.
+        * Creating art projects with recycled plastic toys.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc8">
+        <label for="acc8">
+         <h2>08</h2>
+         <h3> How can I keep plastic toys clean and sanitized?</h3>   
+        </label>
+    <div class="content"><p>Wash plastic toys regularly with warm soapy water. For toys that can be submerged, you can add a little vinegar or bleach to the water. Be sure to rinse the toys thoroughly afterwards.</p></div>
+    </div>
+    <div class="tab"><input type="radio" name="acc" id="acc9">
+        <label for="acc9">
+         <h2>09</h2>
+         <h3>What are some of the most iconic plastic toys of all time?</h3>   
+        </label>
+    <div class="content"><p>Some of the most iconic plastic toys of all time include:
+        * Barbie dolls
+        * Lego bricks
+        * Play-Doh
+        * Hot Wheels cars
+        * Transformers</p></div>
+    </div><div class="tab"><input type="radio" name="acc" id="acc10">
+        <label for="acc10">
+         <h2>10</h2>
+         <h3>How has the plastic toy industry changed over time?</h3>   
+        </label>
+    <div class="content"><p>The plastic toy industry has changed dramatically over time. In the past, toys were often made from wood, metal, or other natural materials. Today, the vast majority of toys are made from plastic. The industry has also become increasingly global, with toys being manufactured and sold all over the world.</p></div>
+    </div>
+    
+    </div>
+</body>
+</html>
